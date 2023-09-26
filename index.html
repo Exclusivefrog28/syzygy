@@ -21,18 +21,18 @@
 <body>
 
 <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-25">
-    <div class="container-fluid">
-        <a class="navbar-brand ms-5 position-absolute align-self-start d-flex flex-row align-items-center gap-3" href="#">
+    <div class="container-fluid d-flex justify-content-between px-5">
+        <a class="navbar-brand d-flex flex-row align-items-center gap-3" href="#">
             <img class="small-logo" src="assets/logo.svg" alt="logo"/>
             <p class="h5 hero-text">syzygy</p>
         </a>
-        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
+        <div class="collapse navbar-collapse position-absolute start-50 translate-middle-x mx-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
@@ -58,6 +58,12 @@
         <img class="hero-logo" src="assets/logo.svg" alt="logo"/>
         <h1 class="display-1 hero-text">syzygy</h1>
     </div>
+    <div class="position-absolute bottom-0 mb-5 p-3 scroll-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+        </svg>
+    </div>
 </div>
 
 <section class="container-sm p-3 my-5">
@@ -69,11 +75,15 @@
 </section>
 
 <section class="container-sm p-3">
-    <div class="row align-items-center">
+    <div class="row align-items-center gy-5">
         <div class="col-12 col-lg-6">
             <h1 class="display-6">Stranger</h1>
-            <p class="lead">Introducing our latest masterpiece, the spaceplane that will change everything - <i>Stranger</i>.<br/> It's not just a spaceplane; it's a portal to the
-                cosmos. Designed for interplanetary voyages, Stranger is set to embark on its maiden crewed flight soon.</p>
+            <p class="lead">Introducing our latest masterpiece, the vehicle that will change everything - <i>Stranger</i>.<br/>
+                It's not just a spaceplane; it's a portal to the cosmos. Stranger is powered by a revolutionary multimode nuclear engine that is more efficient than anything
+                before.<br/>
+                We are currently preparing for the first crewed flight of Stranger. This mission will be a major milestone in the history of space travel, and it will pave the way
+                for a new era of space exploration.
+            </p>
             <a class="icon-link icon-link-hover" href="#">
                 Read more
                 <i class="bi bi-chevron-right"></i>
@@ -104,7 +114,7 @@
             <p>We are committed to sustainable space travel. Our nuclear propulsion technology is designed to minimize environmental impact.</p>
         </div>
         <div class=col>
-            <i class="bi bi-universal-access feature-icon fs-2"></i>
+            <i class="bi bi-universal-access fs-2"></i>
             <h2>Accessibility</h2>
             <p>Our goal is to make space travel accessible to all, inspiring the next generation of explorers.</p>
         </div>
@@ -113,7 +123,8 @@
 
 <section class="container-sm p-3 my-5">
     <h1 class="display-6">Join Us on Our Journey</h1>
-    <p class="lead">We believe that the future of space travel is limitless, and we invite you to be a part of it. Explore our website to learn more about our projects, team, and career opportunities. Witness the magic of space travel and join us as we unlock the universe, one leap at a time.</p>
+    <p class="lead">We believe that the future of space travel is limitless, and we invite you to be a part of it. Explore our website to learn more about our projects, team, and
+        career opportunities. Witness the magic of space travel and join us as we unlock the universe, one leap at a time.</p>
 </section>
 
 <footer class="container-sm mx-auto d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 mx-5 border-top">
@@ -138,9 +149,10 @@
             <a class="nav-link px-2 text-body-secondary" href="#">Crew</a>
         </li>
     </ul>
-    <p class="mx-auto mt-3"><small><i>Disclaimer: This landing page is for fictional purposes and does not represent any real space agency or organization.</i></small></p>
+    <p class="mx-auto mt-3"><small><i>Disclaimer: The content of this webpage is purely fictional and does not represent any real space agency or organization.</i></small></p>
 </footer>
 
+<script src="home.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
