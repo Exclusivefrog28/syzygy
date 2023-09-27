@@ -1,0 +1,32 @@
+:root {
+    --bs-body-bg: #0A0A0A;
+}
+
+.logo-text {
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: .5rem;
+    font-weight: 365;
+    user-select: none;
+}
+
+.small-logo {
+    height: 1.8rem;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
