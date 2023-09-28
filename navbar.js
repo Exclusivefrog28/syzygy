@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
         window.addEventListener('scroll', () => {
             let scrollY = window.scrollY;
 
+            if(scrollY === 0) {
+                navbar.classList.add('bg-opacity-25')
+            }else{
+                navbar.classList.remove('bg-opacity-25');
+            }
+
             if (scrollY < lastScrollY) {
                 navbar.classList.remove('scrolled-down');
                 navbar.classList.add('scrolled-up');
