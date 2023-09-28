@@ -63,7 +63,7 @@
         <img class="hero-logo" src="assets/logo.svg" alt="logo"/>
         <h1 class="display-1 logo-text">syzygy</h1>
     </div>
-    <div class="position-absolute bottom-0 mb-5 p-3 scroll-button">
+    <div class="position-absolute bottom-0 mb-5 p-3 scroll-button" tabindex="0">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
              class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -100,8 +100,9 @@
                 <i class="bi bi-chevron-right"></i>
             </a>
         </div>
-        <figure class="col-12 col-lg-6 hover-img-container">
-            <img class="img-fluid rounded-3 hover-img" src="assets/stranger_trans.png" alt="Stranger spaceplane"/>
+        <figure id="strangerContainter" class="col-12 col-lg-6 hover-img-container">
+            <img id="strangerClosed" class="img-fluid rounded-3 hover-img" src="assets/stranger_trans.png" alt="Stranger spaceplane"/>
+            <img id="strangerOpen" class="img-fluid rounded-3 hover-img overlayed-img opacity-0 z-n1" src="assets/stranger_deployed.png" alt="Stranger spaceplane"/>
         </figure>
     </div>
 </section>
