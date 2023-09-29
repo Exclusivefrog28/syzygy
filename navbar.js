@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
             let scrollY = window.scrollY;
 
             if(scrollY === 0) {
-                navbar.classList.add('bg-opacity-25')
+                navbar.classList.add('bg-transparent')
             }else{
-                navbar.classList.remove('bg-opacity-25');
+                navbar.classList.remove('bg-transparent');
             }
 
             if (scrollY < lastScrollY) {
