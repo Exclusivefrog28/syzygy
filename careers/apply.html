@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application - s y z y g y</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="../global.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--logo font-->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body class="pt-5">
+
+<nav class="navbar navbar-expand-lg fixed-top bg-black bg-transparent">
+    <div class="container-fluid d-flex justify-content-between px-5">
+        <a class="navbar-brand d-flex flex-row align-items-center gap-3" href="/index.html">
+            <img class="small-logo" src="../assets/logo.svg" alt="logo"/>
+            <p class="h5 logo-text">syzygy</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center text-lg-start">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Stranger</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Technology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Spaceport</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/careers/">Careers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container-sm mt-5">
+    <form action="/apply" method="post">
+        <fieldset class="row gx-5 gy-4 justify-content-between">
+            <legend class="display-6 col-12">Application Form</legend>
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your first name" maxlength="100" required>
+            </div>
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your last name" maxlength="100" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" maxlength="100" required>
+            </div>
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" maxlength="10" required>
+            </div>
+            <div class="col-md-6">
+                <label for="position" class="form-label">Department:</label>
+                <select class="form-select" id="position" name="position" required>
+                    <option selected>Select a department</option>
+                    <option value="research">R&D</option>
+                    <option value="missioncontrol">Mission Control</option>
+                    <option value="astronaut">Astronaut Training</option>
+                    <option value="administration">Administration</option>
+                    <option value="production">Production</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="resume" class="form-label">Resume</label>
+                <input type="file" class="form-control" id="resume" name="resume">
+            </div>
+            <div class="col-12">
+                <label for="fulltime-yes" class="form-label">Are you interested in a full-time position?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="fulltime" id="fulltime-yes" value="yes" required checked>
+                    <label class="form-check-label" for="fulltime-yes">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="fulltime" id="fulltime-no" value="no" required>
+                    <label class="form-check-label" for="fulltime-no">No</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="relocate" id="relocate">
+                    <label class="form-check-label" for="relocate">I'm willing to relocate</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="cover_letter" class="form-label">Cover Letter</label>
+                <textarea class="form-control" id="cover_letter" name="cover_letter" rows="5" maxlength="1000" minlength="200" required></textarea>
+            </div>
+            <button type="reset" class="btn btn-secondary col-5 ms-4">Reset</button>
+            <button type="submit" class="btn btn-success col-5 me-4">Submit</button>
+
+        </fieldset>
+    </form>
+</main>
+
+<footer class="container-sm mx-auto d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 mx-5 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">© 2033 Syzgy Aerospace</p>
+    <a class="col-md-4 d-flex align-items-center justify-content-center" href="/index.html">
+        <img src="../assets/logo.svg" alt="logo" class="small-logo"/>
+    </a>
+    <ul class="nav col-md-4 justify-content-end align-items-center mx-auto">
+        <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary" href="#">Stranger</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary" href="/news.html">News</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary" href="#">Tech</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary" href="#">Spaceport</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary" href="/careers/careers/">Careers</a>
+        </li>
+    </ul>
+    <p class="mx-auto mt-3"><small><i>Disclaimer: The content of this webpage is purely fictional and does not represent
+        any real space agency or organization.</i></small></p>
+</footer>
+
+<script src="../navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
