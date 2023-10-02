@@ -45,7 +45,7 @@
 }
 
 .background {
-    background: radial-gradient(#000000aa 0%, transparent 40%);
+    background: radial-gradient(circle at center, #000000aa 0%, transparent 40%);
 }
 
 .scroll-button {
@@ -63,4 +63,8 @@
     opacity: 0;
     transform: translateY(-100%);
     pointer-events: none;
+}
+
+.text-link:visited{
+    color: #bd9dff;
 }

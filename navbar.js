@@ -3,6 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector('.navbar');
     if (navbar) {
         let lastScrollY = 0;
+
+        if(scrollY === 0) {
+            navbar.classList.add('bg-transparent')
+        }else{
+            navbar.classList.remove('bg-transparent');
+        }
+
         window.addEventListener('scroll', () => {
             let scrollY = window.scrollY;
 
