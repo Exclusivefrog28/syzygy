@@ -28,9 +28,15 @@
     cursor: pointer;
 }
 
+.hover-img-container:hover > .overlayed-img {
+    transform: translateX(-50%) scale(130%) rotate(-10deg);
+}
+
+
 .overlayed-img {
     position: absolute;
-    left: 12px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
     height: 100%;
 }
