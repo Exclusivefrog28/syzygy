@@ -3,7 +3,7 @@ body{
 }
 
 .featured-article{
-    background-image: url("assets/launch.jpeg");
+    background-image: url("assets/launch.webp");
     background-size: cover;
     position: relative;
 }
