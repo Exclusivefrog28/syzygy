@@ -1,21 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
     const navbar = document.querySelector('.navbar');
     if (navbar) {
         let lastScrollY = 0;
 
-        if(scrollY === 0) {
+        if (scrollY === 0) {
             navbar.classList.add('bg-transparent')
-        }else{
+        } else {
             navbar.classList.remove('bg-transparent');
         }
 
         window.addEventListener('scroll', () => {
             let scrollY = window.scrollY;
 
-            if(scrollY === 0) {
+            if (scrollY === 0) {
                 navbar.classList.add('bg-transparent')
-            }else{
+            } else {
                 navbar.classList.remove('bg-transparent');
             }
 

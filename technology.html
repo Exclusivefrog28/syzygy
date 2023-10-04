@@ -10,6 +10,7 @@
 
     <link href="global.css" rel="stylesheet">
     <link href="technology.css" rel="stylesheet">
+    <link href="print.css" media="print" rel="stylesheet"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,10 +57,10 @@
 </nav>
 
 <header class="w-100 vh-100 background d-flex justify-content-center align-items-center">
-    <div class="d-flex flex-column align-items-center hero">
+    <div class="d-flex flex-column align-items-center">
         <h1 class="display-4 logo-text text-center">Explore Our<br/>Cutting-Edge Technologies</h1>
     </div>
-    <div class="position-absolute bottom-0 mb-5 p-3 scroll-button" tabindex="0">
+    <div class="position-absolute bottom-0 mb-5 p-3 scroll-button" tabindex="0" aria-label="Go to content">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
              class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -68,117 +69,139 @@
     </div>
 </header>
 
-<section class="container-sm mt-5 p-3">
-    <p class="lead">At Syzygy Aerospace, we're not just dreaming of the future; we're building it. Our commitment to innovation and exploration drives us to develop technologies
-        that push the boundaries of space travel.</p>
-</section>
+<main>
+    <section class="container-sm mt-5 p-3">
+        <p class="lead">At Syzygy Aerospace, we're not just dreaming of the future; we're building it. Our commitment to innovation and exploration drives us to develop
+            technologies
+            that push the boundaries of space travel.</p>
+    </section>
 
-<article class="container-sm mb-5 p-3">
-    <div class="row align-items-center gy-5">
-        <div class="col-12 col-lg-7">
-            <h1 class="display-6">Reimagining Launch</h1>
-            <p class="lead"><strong>SSTO</strong>s <span class="text-body-secondary">(Singe-Stage-To-Orbit)</span> are the future of space travel. They are designed to reach orbit
-                in a single stage, eliminating the need for costly and complex
-                multi-stage rocket systems. Our SSTOs are engineered for efficiency, reusability, and cost-effectiveness, revolutionizing the way we access space.</p>
-            <h2 class="fs-5">Explore the key features:</h2>
-            <ul class="mt-3">
-                <li><p><strong>Cost-Efficiency</strong><br/>Cut launch costs by eliminating multiple stages.</p></li>
-                <li><p><strong>Rapid Turnaround</strong><br/>Shorten the time between launches for increased mission frequency.</p></li>
-                <li><p><strong>Payload Versatility</strong><br/>Accommodate a wide range of payloads and missions.</p></li>
-                <li><p><strong>Sustainability</strong><br/>Reduce environmental impact with reusable technology.</p></li>
-            </ul>
-            <aside class="opacity-75">How they work: <a class="text-link" href="https://en.wikipedia.org/wiki/Single-stage-to-orbit" target="_blank">SSTO on Wikipedia</a></aside>
+    <article class="container-sm mb-5 p-3">
+        <div class="row align-items-center gy-5">
+            <div class="col-12 col-lg-7">
+                <h1 class="display-6">Reimagining Launch</h1>
+                <p class="lead"><strong>SSTO</strong>s <span class="text-body-secondary">(Singe-Stage-To-Orbit)</span> are the future of space travel. They are designed to reach
+                    orbit
+                    in a single stage, eliminating the need for costly and complex
+                    multi-stage rocket systems. Our SSTOs are engineered for efficiency, reusability, and cost-effectiveness, revolutionizing the way we access space.</p>
+                <h2 class="fs-5">Explore the key features:</h2>
+                <ul class="mt-3">
+                    <li><p><strong>Cost-Efficiency</strong><br/>Cut launch costs by eliminating multiple stages.</p></li>
+                    <li><p><strong>Rapid Turnaround</strong><br/>Shorten the time between launches for increased mission frequency.</p></li>
+                    <li><p><strong>Payload Versatility</strong><br/>Accommodate a wide range of payloads and missions.</p></li>
+                    <li><p><strong>Sustainability</strong><br/>Reduce environmental impact with reusable technology.</p></li>
+                </ul>
+                <aside class="opacity-75">How they work: <a class="text-link" href="https://en.wikipedia.org/wiki/Single-stage-to-orbit" target="_blank">SSTO on Wikipedia</a>
+                </aside>
+            </div>
+            <figure class="col-12 col-lg-5">
+                <a href="assets/spaceplane.webp" target="_blank">
+                    <img class="img-fluid rounded-3" src="assets/spaceplane_small.webp" alt="Spaceplane taking off runway"/>
+                </a>
+            </figure>
         </div>
-        <figure class="col-12 col-lg-5">
-            <img class="img-fluid rounded-3" src="assets/spaceplane.webp" alt="Spaceplane taking off runway"/>
-        </figure>
-    </div>
-</article>
+    </article>
 
-<article class="container-sm my-5 p-3">
-    <div class="row align-items-start gy-5">
-        <div class="col-12 col-lg-6">
-            <h1 class="display-6">Propelling Exploration</h1>
-            <p class="lead">Our <strong>Nuclear Thermal Rockets</strong> revolutionize propulsion systems for deep space missions. Powered by controlled nuclear reactions, these
-                engines provide unmatched thrust and efficiency. Capable of operating on a wide range of fuel-mixtures and not requiring oxidizer; They can even run on jet fuel, which
-                is perfect for spaceplanes with jet engines.<br/>Dive into the technical specifications of our state-of-the-art engines with our informative table.</p>
-            <aside class="opacity-75">How they work: <a class="text-link" href="https://en.wikipedia.org/wiki/Nuclear_thermal_rocket" target="_blank">
-                Nuclear thermal rockets on Wikipedia</a></aside>
+    <article class="container-sm my-5 p-3">
+        <div class="row align-items-start gy-5">
+            <div class="col-12 col-lg-6">
+                <h1 class="display-6">Propelling Exploration</h1>
+                <p class="lead">Our <strong>Nuclear Thermal Rockets</strong> revolutionize propulsion systems for deep space missions. Powered by controlled nuclear reactions,
+                    these
+                    engines provide unmatched thrust and efficiency. Capable of operating on a wide range of fuel-mixtures and not requiring oxidizer; They can even run on jet
+                    fuel, which
+                    is perfect for spaceplanes with jet engines.<br/>Dive into the technical specifications of our state-of-the-art engines with our informative table.</p>
+                <aside class="opacity-75">How they work: <a class="text-link" href="https://en.wikipedia.org/wiki/Nuclear_thermal_rocket" target="_blank">
+                    Nuclear thermal rockets on Wikipedia</a></aside>
+            </div>
+            <div class="col-12 col-lg-6">
+                <table class="table">
+                    <caption>
+                        <details>
+                            <summary>Nuclear thermal rocket motor specifications</summary>
+                            The parameters of the J-N500 are for its closed-cycle mode.<br/>
+                            Note that these values are theoretical maximums, real world test results may differ.
+                        </details>
+                    </caption>
+                    <thead>
+                    <tr>
+                        <th scope="col">Engine Model</th>
+                        <th scope="col">Max Thrust</th>
+                        <th scope="col">Specific Impulse</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">NV-100 'Neptune' Atomic Rocket Motor</th>
+                        <td>67 kN</td>
+                        <td>950 s</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">NV-500 'Poseidon' Atomic Rocket Motor</th>
+                        <td>310 kN</td>
+                        <td>925 s</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">J-N500 'Project Eeloo' Multimode Nuclear Engine</th>
+                        <td>820 kN</td>
+                        <td>580 s</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="col-12 col-lg-6">
-            <table class="table">
-                <caption>
-                    <details>
-                        <summary>Nuclear thermal rocket motor specifications</summary>
-                        The parameters of the J-N500 are for its closed-cycle mode.<br/>
-                        Note that these values are theoretical maximums, real world test results may differ.
-                    </details>
-                </caption>
-                <thead>
-                <tr>
-                    <th scope="col">Engine Model</th>
-                    <th scope="col">Max Thrust</th>
-                    <th scope="col">Specific Impulse</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">NV-100 'Neptune' Atomic Rocket Motor</th>
-                    <td>67 kN</td>
-                    <td>950 s</td>
-                </tr>
-                <tr>
-                    <th scope="row">NV-500 'Poseidon' Atomic Rocket Motor</th>
-                    <td>310 kN</td>
-                    <td>925 s</td>
-                </tr>
-                <tr>
-                    <th scope="row">J-N500 'Project Eeloo' Multimode Nuclear Engine</th>
-                    <td>820 kN</td>
-                    <td>580 s</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</article>
+    </article>
 
-<article class="container-sm my-5 p-3">
-    <div class="row align-items-center gy-5">
-        <figure class="col-12 col-lg-5">
-            <img class="img-fluid rounded-3" src="assets/nswr.webp" alt="Spacecraft firing its engine, blue plume"/>
-        </figure>
-        <div class="col-12 col-lg-7">
-            <h1 class="display-6">The Future of Interstellar Travel</h1>
-            <p class="lead"><strong>Syzygy</strong> is at the forefront of near-future propulsion technology. Embark on an odyssey through the cosmos with our <strong>Nuclear Salt Water Rockets</strong>. These innovative engines can fully abuse the power of nuclear fission, without having to contain and control it. The possibilities are boundless.</p>
-            <h2 class="fs-5">Key features include:</h2>
-            <ul class="mt-3">
-                <li><p><strong>Impressive Thrust</strong><br/>Achieving thrust levels far beyond traditional chemical rockets.</p></li>
-                <li><p><strong>Incredible Fuel Efficiency</strong><br/>High exhaust velocities lead to 15 times the I<sub>sp</sub> of chemical rockets.</p></li>
-            </ul>
-            <aside class="opacity-75">How they work: <a class="text-link" href="https://en.wikipedia.org/wiki/Nuclear_salt-water_rocket" target="_blank">
-                Nuclear Salt Water Rockets on Wikipedia</a></aside>
+    <article class="container-sm my-5 p-3">
+        <div class="row align-items-center gy-5">
+            <figure class="col-12 col-lg-5">
+                <a href="assets/nswr.webp" target="_blank">
+                    <img class="img-fluid rounded-3" src="assets/nswr_small.webp" alt="Spacecraft firing its engine, blue plume"/>
+                </a>
+            </figure>
+            <div class="col-12 col-lg-7">
+                <h1 class="display-6">The Future of Interstellar Travel</h1>
+                <p class="lead"><strong>Syzygy</strong> is at the forefront of near-future propulsion technology. Embark on an odyssey through the cosmos with our <strong>Nuclear
+                    Salt Water Rockets</strong>. These innovative engines can fully abuse the power of nuclear fission, without having to contain and control it. The possibilities
+                    are boundless.</p>
+                <h2 class="fs-5">Key features include:</h2>
+                <ul class="mt-3">
+                    <li><p><strong>Impressive Thrust</strong><br/>Achieving thrust levels far beyond traditional chemical rockets.</p></li>
+                    <li><p><strong>Incredible Fuel Efficiency</strong><br/>High exhaust velocities lead to 15 times the I<sub>sp</sub> of chemical rockets.</p></li>
+                </ul>
+                <aside class="opacity-75">How they work: <a class="text-link" href="https://en.wikipedia.org/wiki/Nuclear_salt-water_rocket" target="_blank">
+                    Nuclear Salt Water Rockets on Wikipedia</a></aside>
+            </div>
         </div>
-    </div>
-</article>
+    </article>
 
-<article class="container-sm my-5 p-3">
-    <div class="row align-items-center gy-5">
-        <div class="col-12 col-lg-8">
-            <h1 class="display-6">Maximizing Comfort and Safety</h1>
-            <p class="lead">The <strong>ARIES</strong> <span class="text-body-secondary">(Advanced Radiation-Resistant Integrated Exo-Suit)</span> is a revolutionary advancement in spacesuit technology. Unlike traditional spacesuits that rely on pressurized gas, the <strong>ARIES</strong> uses mechanical counterpressure to create a more flexible, comfortable, and durable suit for astronauts.</p>
-            <h2 class="fs-4 fw-normal">Maximum Mobility</h2>
-            <p class="fw-light">Besides the helmet the <strong>ARIES</strong> relies entirely on mechanical tension to provide a snug yet comfortable fit around the astronaut's body. This design minimizes the risk of decompression sickness, enhances mobility, and allows astronauts to move with unparalleled freedom during critical tasks and emergencies.</p>
-            <h2 class="fs-4 fw-normal">Cosmic Protection</h2>
-            <p class="fw-light">In the unforgiving vacuum of space, cosmic radiation is a constant threat. The <strong>ARIES</strong> incorporates radiation shielding materials, providing astronauts with robust protection against harmful radiation.</p>
-            <h2 class="fs-4 fw-normal">Temperature Control</h2>
-            <p class="fw-light"><strong>ARIES</strong> features an advanced temperature control system that keeps astronauts comfortable and safe in any environment. This system regulates the suit's interior temperature, ensuring that astronauts remain at an optimal comfort level throughout their missions.</p>
+    <article class="container-sm my-5 p-3">
+        <div class="row align-items-center gy-5">
+            <div class="col-12 col-lg-8">
+                <h1 class="display-6">Maximizing Comfort and Safety</h1>
+                <p class="lead">The <strong>ARIES</strong> <span class="text-body-secondary">(Advanced Radiation-Resistant Integrated Exo-Suit)</span> is a revolutionary
+                    advancement in spacesuit technology. Unlike traditional spacesuits that rely on pressurized gas, the <strong>ARIES</strong> uses mechanical counterpressure to
+                    create a more flexible, comfortable, and durable suit for astronauts.</p>
+                <h2 class="fs-4 fw-normal">Maximum Mobility</h2>
+                <p class="fw-light">Besides the helmet the <strong>ARIES</strong> relies entirely on mechanical tension to provide a snug yet comfortable fit around the astronaut's
+                    body. This design minimizes the risk of decompression sickness, enhances mobility, and allows astronauts to move with unparalleled freedom during critical tasks
+                    and emergencies.</p>
+                <h2 class="fs-4 fw-normal">Cosmic Protection</h2>
+                <p class="fw-light">In the unforgiving vacuum of space, cosmic radiation is a constant threat. The <strong>ARIES</strong> incorporates radiation shielding
+                    materials, providing astronauts with robust protection against harmful radiation.</p>
+                <h2 class="fs-4 fw-normal">Temperature Control</h2>
+                <p class="fw-light"><strong>ARIES</strong> features an advanced temperature control system that keeps astronauts comfortable and safe in any environment. This
+                    system regulates the suit's interior temperature, ensuring that astronauts remain at an optimal comfort level throughout their missions.</p>
+            </div>
+            <figure class="col-12 col-lg-4">
+                <a href="assets/suit.webp" target="_blank">
+                    <img class="img-fluid rounded-3" src="assets/suit_small.webp" alt="Showcase of the ARIES Suit in a thunderstorm"/>
+                </a>
+            </figure>
         </div>
-        <figure class="col-12 col-lg-4">
-            <img class="img-fluid rounded-3" src="assets/suit.webp" alt="Showcase of the ARIES Suit in a thunderstorm"/>
-        </figure>
-    </div>
-</article>
+    </article>
+
+</main>
 
 <footer class="container-sm mx-auto d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 mx-5 border-top">
     <p class="col-md-4 mb-0 text-body-secondary">© 2033 Syzgy Aerospace</p>
@@ -204,7 +227,7 @@
 </footer>
 
 <script src="navbar.js"></script>
-<script src="home.js"></script>
+<script src="scrollButton.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
